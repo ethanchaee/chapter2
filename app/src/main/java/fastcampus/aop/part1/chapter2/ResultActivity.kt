@@ -13,6 +13,6 @@ class ResultActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val cmValue = intent.getIntExtra("cmValue", 0)
-        binding.textView.text = (cmValue / 100f).toString()
+        binding.textView.text = "${(cmValue / 100f)}m"
     }
 }
