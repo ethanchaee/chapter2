@@ -10,6 +10,7 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="cm 값을 입력 해주세요"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,6 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/convertButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="m 로 변환"
