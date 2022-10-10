@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.convertButton.setOnClickListener {
-            val number = binding.editText.text.toString().toInt()
+            val number = binding.editText.text.toString().toIntOrNull() ?: 0
 
             val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra("cmValue", number)
